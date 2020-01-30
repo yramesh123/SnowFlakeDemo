@@ -1,0 +1,18 @@
+<h1>Food Items</h1>
+
+<p>Test Med.</p>
+
+<p *ngIf="!fooditems"><em>Loading...</em></p>
+
+<table class='table' *ngIf="fooditems">
+  <thead>
+    <tr>
+      <th>Food Item</th>     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let food of fooditems">
+      <td>{{ food }}</td>
+    </tr>
+  </tbody>
+  </table>

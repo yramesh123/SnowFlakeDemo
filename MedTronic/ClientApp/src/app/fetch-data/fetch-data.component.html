@@ -1,0 +1,21 @@
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!fooditems"><em>Loading...</em></p>
+
+<table class='table' *ngIf="fooditems">
+  <thead>
+    <tr>
+      <th>Food Menu</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let food of fooditems">
+      <td>{{ food }}</td>      
+    </tr>
+  </tbody>
+</table>
+
+
+  
